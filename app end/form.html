@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Team 1 code</title>
+    <link rel="stylesheet" href="CSS/styles.css" />
+    <link rel="stylesheet" href="CSS/normalize.css" />
+    <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+    <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="nav">
+        <ul class="list nav__list">
+          <li class="nav__item"><a href="personalhome.html">Home</a></li>
+          <li class="nav__item">
+            <a href="form.html">emergancy diagnosis</a>
+          </li>
+          <li class="nav__item">
+            <a href="webpages/Settings.html">Settings</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <h2>what is your name</h2>
+    <form action="py/main.py" method="post"
+    method="post">
+      <p>
+          <label>First Name <input name="first name"  type="text" /></label>
+          <label>Last Name <input name="last name" type="last name" /></label>
+          <label>age <input name="age"  type="number" /></label>
+         
+      </p>
+    <h2> what are your symptoms </h2>
+        <label>Have been bitten by an animal<input type="checkbox"
+                          name="animal bit"
+                          value="bitten" />
+        </label>
+        <label>Are having trouble breathing<input type="checkbox"
+                            name="trouble breathing"
+                            value="breath" />
+        </label>
+        <label>Have been coughing for more than a week<input type="checkbox"
+            name="coughing"
+            value="cough" />
+          </label>     
+        <label>Have severe headache <input type="checkbox"
+            name="headache"
+            value="headache" />
+          </label>           
+        <label>Experience a rash or swelling<input type="checkbox"
+            name="rash"
+            value="rash" />
+          </label>    
+        <label>Have unexplained or prolonged fever<input type="checkbox"
+            name="fever"
+            value="fever" />
+          </label>  
+          <label>Have sudden vision problems<input type="checkbox"
+            name="vision problems"
+            value="vision" />
+          </label>  
+          <label>what is any medication you curently taking <input type="text"
+            name="current medication"
+            value="med" />
+          </label>  
+          <label>any known conditions that you have<input type="text"
+            name="known conditions"
+            value="conditions" />
+          </label>  
+          <label>loss of appetite<input type="checkbox"
+            name="loss of appetite"
+            value="conditions" />
+          </label>  
+          <label>Muscle or body aches<input type="checkbox" 
+          name="body aches"
+           value="aches"/>
+          </label>
+          <label>Telephone:<input type="text" 
+            size="65" 
+            name="Telephone" />
+          </label>
+          Comments:
+          <textarea cols="55" name="Comment"> </textarea>
+
+          <input class="submit" type="submit" value="Save"  />
+          <input type="reset" value="Reset" name="Reset" />
+    </form>
+
+
+    <py-config>
+      plugins = [ "https://pyscript.net/latest/plugins/python/py_tutor.py" ]
+      [[fetch]] files = ["py/main.py"] </py-config>
+    <py-script src="py/main.py"></py-script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
