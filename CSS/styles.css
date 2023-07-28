@@ -9,8 +9,8 @@
     --borderRadius: 30px;
 }
 
-*, 
-*::after, 
+*,
+*::after,
 *::before {
     box-sizing: border-box;
 }
@@ -33,7 +33,9 @@ body {
     color: var(--colorBody);
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     color: var(--colorHeading);
     margin-bottom: 1rem;
     line-height: 1.1;
@@ -98,6 +100,24 @@ a {
     margin-left: 10px;
 }
 
+.linkWArrowF {
+    color: var(--colorAccent);
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: bold;
+
+}
+
+.linkWArrowF::before {
+    content: '<--';
+    margin-left: 5px;
+    transition: margin 0.15s;
+}
+
+.linkWArrow:hover::before {
+    margin-right: 10px;
+}
+
 @media screen and (min-width: 1024px) {
     .linkWArrow {
         font-size: 1.5rem;
@@ -117,7 +137,7 @@ a {
 
 .badge--primary {
     background: var(--colorPrimary);
-    color:#fff
+    color: #fff
 }
 
 .badge--secondary {
@@ -130,7 +150,7 @@ a {
     padding: 0.5rem 1.5rem;
 }
 
-@media screen and (min-width: 1024px ) {
+@media screen and (min-width: 1024px) {
     .badge {
         font-size: 1.6rem;
     }
@@ -148,7 +168,7 @@ a {
 
 .list--inline .list__item {
     display: inline-block;
-    margin-right: 2rem;   
+    margin-right: 2rem;
 }
 
 .list--tick {
@@ -211,7 +231,7 @@ a {
     font-size: 1.8rem;
     font-weight: 600;
     margin: 1rem 0;
-    outline:0;
+    outline: 0;
     padding: 2rem 4vh;
     text-align: center;
     text-transform: uppercase;
@@ -268,7 +288,7 @@ a {
     border: 2px solid var(--colorHeading);
 }
 
-.btn--outline:hover{
+.btn--outline:hover {
     background: var(--colorHeading);
     color: white;
 }
@@ -305,7 +325,7 @@ a {
     border: 0;
     flex-grow: 1;
     padding: 1.5rem 2rem;
-    width: 0; 
+    width: 0;
 }
 
 .input-group .btn {
@@ -326,7 +346,8 @@ a {
     overflow: hidden;
 }
 
-.card__header, .card__body {
+.card__header,
+.card__body {
     padding: 2rem 3rem;
 }
 
@@ -363,6 +384,7 @@ a {
     opacity: .8;
     margin-right: 1rem;
 }
+
 .card--primary .badge--primary {
     background: #126de4;
 }
@@ -411,7 +433,7 @@ a {
     .plan__name {
         font-size: 1.4rem;
     }
-    
+
     .plan__price {
         font-size: 5rem;
     }
@@ -456,6 +478,7 @@ a {
 .quote__text::before {
     content: open-quote;
 }
+
 .quote__text::after {
     content: close-quote;
 }
@@ -487,6 +510,7 @@ a {
     .quote__author {
         font-size: 2.4rem;
     }
+
     .quote__organization {
         font-size: 1.6rem;
     }
@@ -522,17 +546,18 @@ a {
     position: relative;
 }
 
-.testimonial__image > img {
+.testimonial__image>img {
     width: 100%;
 }
 
-.testimonial__image > .icon-container {
+.testimonial__image>.icon-container {
     position: absolute;
     top: 3rem;
     right: -32px;
 }
 
 @media screen and (min-width: 768) {
+
     .testimonial .quote,
     .testimonial .quote__author {
         font-size: 2.4rem;
@@ -581,7 +606,7 @@ a {
 
     .callout .btn {
         justify-self: start;
-        margin: 0 2rem; 
+        margin: 0 2rem;
     }
 }
 
@@ -609,7 +634,7 @@ a {
     transition: all 0.3s;
 }
 
-.collapsible--expanded .collapsible__chevron{
+.collapsible--expanded .collapsible__chevron {
     transform: rotate(0);
 }
 
@@ -641,7 +666,7 @@ a {
 
 .block--dark h1,
 .block--dark h2,
-.block--dark h3{
+.block--dark h3 {
     color: white;
 }
 
@@ -682,12 +707,12 @@ a {
     align-items: center;
 }
 
-.nav__item > a {
+.nav__item>a {
     color: #d2d0db;
     transition: color .3s;
 }
 
-.nav__item > a:hover{
+.nav__item>a:hover {
     color: #fff;
 }
 
@@ -705,6 +730,10 @@ a {
 
 .nav__brand {
     transform: translateY(5px);
+}
+
+.logo {
+    width: 200px;
 }
 
 @media screen and (min-width: 768px) {
@@ -809,13 +838,13 @@ a {
 
 @media screen and (min-width: 768px) {
     .feature:nth-of-type(even) .feature__content {
-      order: 2;
+        order: 2;
     }
 }
 
 
 /*shocase block*/
-.block-shocase__image > img{
+.block-shocase__image>img {
     width: 100%;
 }
 
@@ -828,7 +857,7 @@ a {
         justify-self: end;
     }
 
-    .block-showcase__image > img {
+    .block-showcase__image>img {
         width: auto;
         max-width: 700px;
     }
@@ -864,7 +893,8 @@ a {
 }
 
 .footer__brand {
-    margin-top: 5rem;;
+    margin-top: 5rem;
+    ;
     text-align: center;
 }
 
@@ -909,4 +939,9 @@ a {
     .footer__heading {
         font-size: 1.6rem;
     }
+}
+
+.questions {
+    display: flex;
+    width: 100vw;
 }

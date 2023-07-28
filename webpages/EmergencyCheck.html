@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Emergency Checkup</title>
+    <link rel="stylesheet" href="/CSS/styles.css" />
+    <link rel="stylesheet" href="/CSS/normalize.css" />
+    <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+    <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+  </head>
+  <body>
+    <header>
+      <a href="/index.html" class="linkWArrowF">Back</a>
+    </header>
+    <form action="py/collecter.py" method="post">
+      <label class="questions"
+        >First Name <input name="first name" type="text"
+      /></label>
+      <label class="questions"
+        >Last Name <input name="last name" type="text"
+      /></label>
+      <label class="questions"
+        >Are you having a fever?
+        <input name="Are you having a fever?" type="checkbox"
+      /></label>
+      <label class="questions"
+        >Are you having pain when swallowing
+        <input name="Are you having pain when swallowing" type="checkbox"
+      /></label>
+      <label class="questions"
+        >Are you having a sore throat?
+        <input name="Are you having a sore throat?" type="checkbox"
+      /></label>
+      <label class="questions"
+        >Are you having Red and Swollen tonsils?
+        <input name="Are you having Red and Swollen tonsils?" type="checkbox"
+      /></label>
+      <label class="questions"
+        >Are you having white patches of pus on tonsils?
+        <input
+          name="Are you having white patches of pus on tonsils?"
+          type="checkbox"
+      /></label>
+      <label class="questions"
+        >Are you having tiny red spots on the roof of the mouth?
+        <input
+          name="Are you having tiny red spots on the roof of the mouth?"
+          type="checkbox"
+      /></label>
+      <label class="questions"
+        >Are you having a swollen lymph node?
+        <input name="Are you having a swollen lymph node?" type="checkbox"
+      /></label>
+    </form>
+  </body>
+</html>
