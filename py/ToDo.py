@@ -1,4 +1,5 @@
 import sqlite3
+import sqlite
 
 
 conc = sqlite3.connect("data/hospital.db")

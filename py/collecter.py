@@ -1,4 +1,5 @@
 import sqlite3 
+import sqlite
 import cgi
 # ---------------------------------------------------------------------------- #
 def get_info():
