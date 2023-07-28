@@ -8,28 +8,21 @@ def get_info():
     first =  form.getvalue('first name')
     last =  form.getvalue('last name')
     age = form.getvalue('age')
-    animal_bit =  form.getvalue('animal bit')
-    trouble_breathing = form.getvalue("trouble breathing")
-    coughing = form.getvalue("coughing")
-    headache = form.getvalue("headache")
-    rash = form.getvalue("rash")
-    fever = form.getvalue("fever")
-    vision_problems = form.getvalue("vision problems")
-    current_medication= form.getvalue("current medication")
-    known_conditions  = form.getvalue("known conditions")
-    loss_of_appetite = form.getvalue("loss of appetite")
+    fever = form.getvalue('Are you having a fever?')
+    painSwallowing =  form.getvalue('Are you having pain when swallowing')
+    soreThroat= form.getvalue("Are you having a sore throat?")
+    swollen_tonsils = form.getvalue("Are you having Red and Swollen tonsils?")
+    white_pathces_on_tonsils  = form.getvalue("Are you having white patches of pus on tonsils?")
+    red_spots = form.getvalue("Are you having tiny red spots on the roof of the mouth?")
+    swollen_lymp_node  = form.getvalue("Are you having a swollen lymph node?")
     # ---------------------------------------------------------------------------- #
     
     name =f"{first} {last}" 
-    syptomns = f",{animal_bit}, {trouble_breathing}, {coughing}, {headache}, {rash}, {fever}, {vision_problems}, {current_medication}, {known_conditions},{loss_of_appetite}"
+    syptomns = f",{fever}, {painSwallowing}, {soreThroat}, {swollen_tonsils}, {white_pathces_on_tonsils}, {red_spots}, {swollen_lymp_node}"
     curser.execute("INSERT INTO Patient(name, age, syptomns, analyzed) VALUES (?, ?, ?, 1);",(name, age, syptomns))
 
-conc = sqlite3.connect("sql databases/hospital.db")
+conc = sqlite3.connect("data/hospital.db")
 curser = conc.cursor()
-
-
-data = []
-
 
 get_info()
 
