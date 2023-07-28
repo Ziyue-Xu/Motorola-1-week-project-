@@ -945,3 +945,8 @@ a {
     display: flex;
     width: 100vw;
 }
+
+.dest {
+    border: 2px solid gray;
+    box-shadow: #222;
+}
