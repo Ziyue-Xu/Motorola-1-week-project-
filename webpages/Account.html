@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/styles.css" />
+    <link rel="stylesheet" href="../CSS/normalize.css" />
+    <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+    <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="nav">
+        <a class="nav__brand" href="/"
+          ><img class="logo" src="/images/logoFull.jpg" alt=""
+        /></a>
+        <ul class="list nav__list">
+          <li class="nav__item"><a href="../index.html">Home</a></li>
+          <li class="nav__item"><a href="ToDo.html">ToDo</a></li>
+          <li class="nav__item"><a href="Account.html">Account</a></li>
+          <li class="nav__item"><a href="login.html">Login</a></li>
+        </ul>
+      </nav>
+      <py-config>
+        plugins = ["https://pyscript.net/latest/plugins/python/py_tutor.py"]
+      </py-config>
+    </header>
+    <form action="py/account info.py" method="post">
+      <div class="input-group">
+        <input type="text" class="input" placeholder="Enter your name" />
+        <button class="btn btn--accent">Submit</button>
+      </div>
+      <div class="input-group">
+        <input type="text" class="input" placeholder="Enter your Email" />
+        <button class="btn btn--accent">Submit</button>
+      </div>
+      <div class="input-group">
+        <input
+          type="text"
+          class="input"
+          placeholder="Enter your date of birth"
+        />
+        <button class="btn btn--accent">Submit</button>
+      </div>
+      <div class="input-group">
+        <input
+          type="text"
+          class="input"
+          placeholder="Any frequent medications?"
+        />
+        <button class="btn btn--accent">Submit</button>
+      </div>
+    </form>
+  </body>
+</html>

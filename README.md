@@ -1,7 +1,6 @@
 # Software-for-group-challenge
-Using infared cameras to detect dangerous substances
 
-Substances such as: Lead, Radiation, CO2, and certain viruses and bacteria
+The Triage system is way too slow in getting patients in.
 
-Further expansion: Identify personel likely to be affected by dangerous substances and notifying hospitals or first responders
-
+Introducing the all new Moto-Med system!
+Solving all your issues and more!

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="/css/normalize.css" />
+    <link rel="stylesheet" href="/css/ex.css" />
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="nav">
+        <a class="nav__brand" href="/"
+          ><img class="logo" src="/images/logoFull.jpg" alt=""
+        /></a>
+        <ul class="list nav__list">
+          <li class="nav__item"><a href="../index.html">Home</a></li>
+          <li class="nav__item"><a href="ToDo.html">ToDo</a></li>
+          <li class="nav__item"><a href="Account.html">Account</a></li>
+          <li class="nav__item"><a href="login.html">Login</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="oldBody">
+      <form
+        class="form-signin"
+        action="https://formspree.io/f/xjvqvjng"
+        method="POST"
+        name="sign-in"
+      >
+        <h1>Please sign in</h1>
+        <div class="form-group">
+          <input
+            class="form-control"
+            type="text"
+            placeholder="Email address"
+            minlength="5"
+            maxlength="255"
+            autofocus
+          />
+        </div>
+        <div class="form-group">
+          <input
+            class="form-control"
+            type="password"
+            placeholder="Password"
+            maxlength="255"
+          />
+        </div>
+        <div class="form-group">
+          <input type="checkbox" id="remember-me" />
+          <label for="remember-me">Remember me</label>
+        </div>
+        <button class="btn">Sign in</button>
+        <p class="muted">Copyright &copy; 2020</p>
+      </form>
+    </section>
+  </body>
+</html>
